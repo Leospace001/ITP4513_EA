@@ -59,6 +59,11 @@ callUserInfo()
 
 function callUserInfo(){
     userList.length = 0;
+    var optionDom = document.createElement('option');
+    optionDom.setAttribute("disabled","disabled");
+    optionDom.setAttribute("selected","selected");
+    optionDom.text = "Select a users";
+    userList.appendChild(optionDom);
 
     fetch("user.php",
             {
