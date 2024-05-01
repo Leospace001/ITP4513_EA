@@ -15,8 +15,9 @@ $name["create_at"] = date("Y-m-d H:i:s", time());
 
 $conn = dbconnect();
 $isActive = $name['isActive'];
+$isAdmin = $name['isAdmin'];
 $userId = $name['userId'];
-$sql = "UPDATE `users` SET `isActive` = $isActive WHERE `id` = $userId ";
+$sql = "UPDATE `users` SET `isActive` = $isActive , `isAdmin` = $isAdmin WHERE `id` = $userId ";
 //var_dump($sql);
 mysqli_query($conn,$sql);
 

@@ -36,6 +36,15 @@ include "top_menu.php";
         </div>
 
         <div>
+            <label for="isActive">Is Admin: </label>
+                <input type="radio" name="isAdmin" id="isAdminYes" value=1>
+                <span>Yes</span>
+                <input type="radio" name="isAdmin" id="isAdminNo" value=0>
+                <span>No</span>
+            </select>
+        </div>
+
+        <div>
             <input type="submit" value="Submit">
         </div>
 
@@ -45,8 +54,13 @@ include "top_menu.php";
 <script>
 var userList = document.getElementById('username');
 
+callUserInfo()
 
-fetch("user.php",
+
+function callUserInfo(){
+    userList.length = 0;
+
+    fetch("user.php",
             {
                 method: "get"
             }).then((response) => {
@@ -64,13 +78,25 @@ fetch("user.php",
                     userList.appendChild(optionElement);
                 });                     
     })
+}
+
 
     userList.onchange = function () {
         var isActive = userList.options[userList.selectedIndex].getAttribute("isActive");
+        var isAdmin = userList.options[userList.selectedIndex].getAttribute("isAdmin");
         if(isActive == 1){
             document.getElementById("isActiveYes").checked = true;
-        }else{
+        }
+        if(isActive == 0){
             document.getElementById("isActiveNo").checked = true;
+        }
+
+        if(isAdmin == 1){
+            document.getElementById("isAdminYes").checked = true;
+        }
+
+        if(isAdmin == 0){
+            document.getElementById("isAdminNo").checked = true;
         }
 };
 
@@ -89,6 +115,7 @@ form.addEventListener("submit",function(event){
                 if (response.ok === true) {
                     alert("Message was submitted successfully");
                     form.reset();
+                    callUserInfo();
                     return response.json()
                 } 
                 
