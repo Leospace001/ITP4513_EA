@@ -56,7 +56,7 @@ if (isset($_POST['submit'])){
                     $_SESSION['user_id'] = $row['id'];
                     $_SESSION['isAdmin'] = $row['isAdmin'];
                     header("location:index.php");
-                }else if ($row['isActive'] == 0){
+                }else if (password_verify($pwd, $stored_pwd) && $row['isActive'] == 0){
                     $error_msg = "Account is locked";
                 }
                 else{

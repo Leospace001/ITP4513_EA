@@ -20,8 +20,10 @@ ALTER TABLE `users`
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`,`isAdmin`) VALUES
-  (1, 'peter chan', 'peter@mail.com', '$2y$10$9QQ395uheDOoYAL6I.Ju0OAHqws5NtTJqeNWuj2LpVXU6pG3w3GFa',1);
+INSERT INTO `users` (`name`, `email`, `password`,`isAdmin`) VALUES
+  ('admin', 'admin@mail.com', '$2y$10$9QQ395uheDOoYAL6I.Ju0OAHqws5NtTJqeNWuj2LpVXU6pG3w3GFa',1);
+  INSERT INTO `users` (`name`, `email`, `password`,`isAdmin`) VALUES
+  ('user01', 'user01@mail.com', '$2y$10$9QQ395uheDOoYAL6I.Ju0OAHqws5NtTJqeNWuj2LpVXU6pG3w3GFa',0);
 
   CREATE TABLE `message` (
   `message_id` int NOT NULL,

@@ -22,7 +22,7 @@ include "top_menu.php";
         <thead>
             <tr>
                 <td>Subject</td>
-                <td>Create At</td>
+                <td>Message</td>
                 <td>Create At</td>
                 <td>Create By</td>
             </tr>
