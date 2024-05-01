@@ -19,6 +19,9 @@ session_start()
                 <?php if (isset($_SESSION['name'])){ ?>
                     <a href="index.php">Create Message</a>
                     <a href="messagebox.php">Message Center</a>
+                    <?php if ($_SESSION["isAdmin"] == 1) {?>
+                        <a href="admin.php">Admin Page</a>
+                        <?php } ?>
                     <div class="user">
                         <span>Welcome <?= $_SESSION['name']?$_SESSION['name']:'Guest';?> </span>
                         <a href="logout.php">Logout</a>
@@ -26,7 +29,7 @@ session_start()
                   
                <?php }  ?>
                 
-                <?php  ?>
+                
             </div>
         </div>
     

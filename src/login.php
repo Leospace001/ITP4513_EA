@@ -40,7 +40,8 @@ if (isset($_POST['submit'])){
             if ($result->num_rows >0){
                 $row = $result->fetch_assoc();
                 $stored_pwd = $row['password'];
-                if (password_verify($pwd, $stored_pwd)){
+                $isActive = $row['isActive'];
+                if (password_verify($pwd, $stored_pwd) && $row['isActive'] == 1){
                     // login successful
                     if (isset($_POST['remember'])){
                        
@@ -53,7 +54,10 @@ if (isset($_POST['submit'])){
                     }
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['user_id'] = $row['id'];
+                    $_SESSION['isAdmin'] = $row['isAdmin'];
                     header("location:index.php");
+                }else if ($row['isActive'] == 0){
+                    $error_msg = "Account is locked";
                 }
                 else{
                     $error_msg = "Incorrect Password";
