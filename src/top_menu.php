@@ -17,6 +17,7 @@ session_start()
                 
                 
                 <?php if (isset($_SESSION['name'])){ ?>
+                    <a href="first_page.php">Home</a>
                     <a href="index.php">Create Message</a>
                     <a href="messagebox.php">Message Center</a>
                     <?php if ($_SESSION["isAdmin"] == 1) {?>
