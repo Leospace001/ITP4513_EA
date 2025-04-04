@@ -22,16 +22,17 @@
 <body>
     <section class="header">
         <nav>
-            <a href="first_page.php"><img src="Logo.png"></a>
+            <a href="home_page.php"><img src="Logo.png"></a>
             <div class="nav-links">
                 <div class="container" onclick="toggleClose(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
-                    <div class="bar3"></div>
+                    <div class="bar3"></div> 
                   </div>
                 <ul>
                     <li><a href="/login.php" id="_index" class="lang" key="LOGIN">Login</a></li>
-                    <li><a id="_rules" class="lang" key="RULES">RULES</a></li>
+                    <li><a href="/home_page.php" id="_index" class="lang" key="HOME">HOME</a></li>
+                    <li><a href="/Rules_of_GO.php" id="_rules" class="lang" key="RULES">RULES</a></li>
                     <li><a id="_comment" class="lang" key="LEAVE_COMMENT">LEAVE A COMMENT</a></li>
                     <li><a id="zh-tw" class="translate">中</a></li>
                     <li><a id="en-gb" class="translate">Eng</a></li>
@@ -55,7 +56,7 @@
     </section>
 
     <div class="row">
-        <div class="aboutGO-col">
+        <div class="aboutGO-col">—
             <h3 class="lang" key="h1_Of_GO1">History of GO</h3>
             <p class="lang" key="content_Of_GO1">The earliest written reference to the game is generally recognized as the historical annal Zuo Zhuan (c.4th century BCE), referring to a historical event of 548 BCE. It is also mentioned in Book XVII of the Analects of Confucius and in two books written by Mencius (c. 3rd century BCE). In all of these works, the game is referred to as yì (弈). Today, in China, it is known as weiqi (simplified Chinese: 围棋; traditional Chinese: 圍棋; pinyin: wéiqí; Wade–Giles: wei ch'i), lit. 'encirclement board game'.
                 Go was originally played on a 17×17 line grid, but a 19×19 grid became standard by the time of the Tang Dynasty (618–907 CE). Legends trace the origin of the game to the mythical Chinese emperor Yao (2337–2258 BCE), who was said to have had his counselor Shun design it for his unruly son, Danzhu, to favorably influence him. Other theories suggest that the game was derived from Chinese tribal warlords and generals, who used pieces of stone to map out attacking positions.

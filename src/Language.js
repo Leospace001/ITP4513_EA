@@ -3,8 +3,9 @@ let mybutton = document.getElementById("myBtn");
 const arrLang = {
     "en-gb": {
 	"TITLE":"Let's play GO",
-      "Login": "Login",
-      "RULES": "RULES OF GO",
+      "LOGIN": "Loign",
+      "HOME": "Home",
+      "RULES": "Rules_of_GO",
     "LEAVE_COMMENT": "LEAVE A COMMENT",
 	  "h1":"Let's start learning to play GO.",
 	  "p1":"Without any prerequisite knowledge you can feel the joy of playing GO.",
@@ -45,7 +46,8 @@ const arrLang = {
 
     "zh-tw": {
 		"TITLE":"圍棋樂",
-      "Login": "登入",
+      "LOGIN": "登入",
+      "HOME": "首頁",
       "RULES": "圍棋規則",
       "LEAVE_COMMENT": "留言",
 	  "h1":"一起享受圍棋的樂趣",
@@ -127,7 +129,8 @@ const arrLang = {
 
     "jp": {
 		"TITLE":"囲碁を楽しもう",
-        "Login": "ログイン",
+        "HOME": "ホーム",
+        "LOGIN": "ログイン",
         "RULES": "囲碁のルール",
         "LEAVE_COMMENT": "コメント",
 		"h1":"囲碁を楽しもう",
