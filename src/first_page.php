@@ -1,9 +1,11 @@
 <?php
-session_start();
-if(empty( $_SESSION['name'])){
-    header("location:login.php");
-}
-include "top_menu.php";
+// session_start();
+// if(empty( $_SESSION['name'])){
+//     header("location:login.php");
+// }
+// >>>>>function is call login system<<<
+// include "top_menu.php";  >>>>>php Login system betton <<<
+
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +30,7 @@ include "top_menu.php";
                     <div class="bar3"></div>
                   </div>
                 <ul>
-                    <li><a id="_index" class="lang" key="HOME">HOME</a></li>
+                    <li><a href="/login.php" id="_index" class="lang" key="LOGIN">Login</a></li>
                     <li><a id="_rules" class="lang" key="RULES">RULES</a></li>
                     <li><a id="_comment" class="lang" key="LEAVE_COMMENT">LEAVE A COMMENT</a></li>
                     <li><a id="zh-tw" class="translate">中</a></li>
@@ -83,5 +85,5 @@ include "top_menu.php";
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="Language.js"></script>
 </html>
