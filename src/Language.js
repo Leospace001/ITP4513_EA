@@ -6,7 +6,7 @@ const arrLang = {
       "LOGIN": "Loign",
       "HOME": "Home",
       "RULES": "Rules_of_GO",
-    "LEAVE_COMMENT": "LEAVE A COMMENT",
+    "LEAVE_COMMENT": "Leave a Comment",
 	  "h1":"Let's start learning to play GO.",
 	  "p1":"Without any prerequisite knowledge you can feel the joy of playing GO.",
 	  "buttonlang":"Find more by scrolling down",

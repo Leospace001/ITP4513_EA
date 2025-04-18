@@ -29,9 +29,9 @@
                   </div>
                 <ul>
                     <li><a href="/login.php" id="_index" class="lang" key="LOGIN">Login</a></li>
-                    <li><a id="_index" class="lang" key="HOME">HOME</a></li>
-                    <li><a id="_rules" class="lang" key="RULES">RULES</a></li>
-                    <li><a id="_comment" class="lang" key="LEAVE_COMMENT">LEAVE A COMMENT</a></li>
+                    <li><a href="/home_page.php" id="_index" class="lang" key="HOME">HOME</a></li>
+                    <li><a href="/Rules_of_GO.php" id="_rules" class="lang" key="RULES">RULES</a></li>
+                    <li><a href="/Leave_a_Comment.php" class="lang" key="LEAVE_COMMENT">LEAVE A COMMENT</a></li>
                     <li><a id="zh-tw" class="translate">中</a></li>
                     <li><a id="en-gb" class="translate">Eng</a></li>
                     <li><a id="jp" class="translate">あ</a></li>
@@ -69,6 +69,7 @@
         <div class="aboutGO-col">
             <h3 class="lang" key="h1_rules_Of_GO4">Hideyuki Fujisawa</h3>
             <iframe width="500" height="420" height="650" src="https://www.youtube.com/embed/DkgscuoL1Js">
+             <!-- //<iframe width="500" height="420" height="650" src="https://www.youtube.com/embed/DkgscuoL1Js"> --> -->
             </iframe>
         </div>
 
