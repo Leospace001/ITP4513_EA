@@ -20,7 +20,7 @@ session_start()
                     <a href="index.php">Create Message</a>
                     <a href="messagebox.php">Message Center</a>
                     <?php if ($_SESSION["isAdmin"] == 1) {?>
-                        <a href="admin.php">Admin Page</a>
+                        <a href="admin.php">Account Management</a>
                         <?php } ?>
                     <div class="user">
                         <span>Welcome <?= $_SESSION['name']?$_SESSION['name']:'Guest';?> </span>

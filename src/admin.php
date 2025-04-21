@@ -18,12 +18,19 @@ include "top_menu.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body
+    style="background-image: 
+    linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)), url('XXXXX.png');
+    background-size: cover;
+    background-position: center;
+    ckground-repeat: no-repeat;margin: 0;">> 
     <form method="POST" id="adminForm">
-        <h1>User Management</h1>
+        <h1>Account Management</h1>
         <div>
             <label for="">Username</label>
             <select name="userId" id="username"></select>
+            <br>
         </div>
         
         <div>

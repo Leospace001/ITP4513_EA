@@ -13,7 +13,14 @@ include "top_menu.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIHIHI</title>
 </head>
-<body>
+<body
+    style="background-image: 
+    linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)), url('XXXXX.png');
+    background-size: cover;
+    background-position: center;
+    ckground-repeat: no-repeat;margin: 0;">> 
+
     <form id="messageForm">
         <h1>Create new message</h1>
 
@@ -23,11 +30,13 @@ include "top_menu.php";
 
         <div>
             <label for="">Subject</label>
+            <br>
             <input type="text" name="subject" id="">
         </div>
 
         <div>
             <label for="">Message</label>
+            <br>
             <textarea name="content" id="" cols="30" rows="10"></textarea>
         </div>
 

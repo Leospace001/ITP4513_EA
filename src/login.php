@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "cfg/dbconnect.php";
-$email = $pwd = "";
+    $email = $pwd = "";
 $email_err = $pwd_err = "";
 $error = false; 
 $err_msg = "";
@@ -86,10 +86,18 @@ include "top_menu.php";
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-        <link href="css/style3.css" rel="stylesheet">
+        <link href="css/style11.css" rel="stylesheet">
     </head>
-<body>
-<h1>Login</h1>
+    <body
+    style="background-image: 
+    linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)), url('XXXXX.png');
+    background-size: cover;
+    background-position: center;
+    ckground-repeat: no-repeat;margin: 0;">> 
+    <!-- /* 背景Color */ -->
+
+<h1 style="color: white;">Login</h1>
 <div class="container">
     <div class="err-msg">
 

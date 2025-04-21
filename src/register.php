@@ -81,7 +81,7 @@
   include "top_menu.php";
   ?>
   
-  <h1>Registration</h1>
+  <h1 style="color: white;">Registration</h1>
   
   <div class="container">
       <div class="err-msg">
@@ -191,5 +191,13 @@
               conf_pwd.type = "password"
       }
   </script>
-  </body>
+    <body
+    style="background-image: 
+    linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)), url('XXXXX.png');
+    background-size: cover;
+    background-position: center;
+    ckground-repeat: no-repeat;margin: 0;">> 
+    <!-- /* 背景Color */ -->
+
   </html>    
